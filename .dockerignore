@@ -1,0 +1,8 @@
+.git
+node_modules
+results
+tests
+inputs
+ad_data.csv
+ad_data.csv.zip
+benchmark.log

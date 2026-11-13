@@ -1,0 +1,19 @@
+{
+  "name": "fv-sec001-ad-performance-aggregator",
+  "version": "1.0.0",
+  "description": "CLI that aggregates ad performance CSV data by campaign_id",
+  "private": true,
+  "type": "commonjs",
+  "main": "src/cli.js",
+  "bin": {
+    "ad-aggregator": "src/cli.js"
+  },
+  "scripts": {
+    "start": "node src/cli.js",
+    "test": "node --test tests/"
+  },
+  "engines": {
+    "node": ">=26"
+  },
+  "license": "UNLICENSED"
+}

@@ -1,0 +1,156 @@
+# Benchmark: 5 runs on macOS (10 CPU cores)
+# Command: /usr/bin/time -l node src/cli.js --input inputs/ad_data.csv --output results/
+# Input: inputs/ad_data.csv (26,843,545 lines, 1,043,304,870 bytes)
+
+## Run 1
+Total lines read:   26843545
+Valid rows:         26843544
+Skipped rows:       0
+Campaigns:          50
+Error log:          /Users/nguyenlam/Documents/FV-SEC001-Challenge/results/errors.log
+CTR ranking:        /Users/nguyenlam/Documents/FV-SEC001-Challenge/results/top10_ctr.csv
+CPA ranking:        /Users/nguyenlam/Documents/FV-SEC001-Challenge/results/top10_cpa.csv
+Elapsed:            4.52s
+        4.64 real        37.00 user         1.56 sys
+           494338048  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               31036  page reclaims
+                  98  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+              152905  involuntary context switches
+        445003368211  instructions retired
+        110586787112  cycles elapsed
+           445107232  peak memory footprint
+
+## Run 2
+Total lines read:   26843545
+Valid rows:         26843544
+Skipped rows:       0
+Campaigns:          50
+Error log:          /Users/nguyenlam/Documents/FV-SEC001-Challenge/results/errors.log
+CTR ranking:        /Users/nguyenlam/Documents/FV-SEC001-Challenge/results/top10_ctr.csv
+CPA ranking:        /Users/nguyenlam/Documents/FV-SEC001-Challenge/results/top10_cpa.csv
+Elapsed:            4.29s
+        4.44 real        36.29 user         1.41 sys
+           529121280  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               33085  page reclaims
+                 206  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+              133698  involuntary context switches
+        442659213448  instructions retired
+        108753516660  cycles elapsed
+           479005728  peak memory footprint
+
+## Run 3
+Total lines read:   26843545
+Valid rows:         26843544
+Skipped rows:       0
+Campaigns:          50
+Error log:          /Users/nguyenlam/Documents/FV-SEC001-Challenge/results/errors.log
+CTR ranking:        /Users/nguyenlam/Documents/FV-SEC001-Challenge/results/top10_ctr.csv
+CPA ranking:        /Users/nguyenlam/Documents/FV-SEC001-Challenge/results/top10_cpa.csv
+Elapsed:            4.35s
+        4.49 real        36.93 user         1.49 sys
+           434225152  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               27375  page reclaims
+                  95  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+              142851  involuntary context switches
+        445866531858  instructions retired
+        110193226970  cycles elapsed
+           399543304  peak memory footprint
+
+## Run 4
+Total lines read:   26843545
+Valid rows:         26843544
+Skipped rows:       0
+Campaigns:          50
+Error log:          /Users/nguyenlam/Documents/FV-SEC001-Challenge/results/errors.log
+CTR ranking:        /Users/nguyenlam/Documents/FV-SEC001-Challenge/results/top10_ctr.csv
+CPA ranking:        /Users/nguyenlam/Documents/FV-SEC001-Challenge/results/top10_cpa.csv
+Elapsed:            4.26s
+        4.38 real        36.41 user         1.41 sys
+           491749376  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               30883  page reclaims
+                  96  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+              129026  involuntary context switches
+        444371645940  instructions retired
+        108728692109  cycles elapsed
+           440355848  peak memory footprint
+
+## Run 5
+Total lines read:   26843545
+Valid rows:         26843544
+Skipped rows:       0
+Campaigns:          50
+Error log:          /Users/nguyenlam/Documents/FV-SEC001-Challenge/results/errors.log
+CTR ranking:        /Users/nguyenlam/Documents/FV-SEC001-Challenge/results/top10_ctr.csv
+CPA ranking:        /Users/nguyenlam/Documents/FV-SEC001-Challenge/results/top10_cpa.csv
+Elapsed:            4.44s
+        4.55 real        38.06 user         1.56 sys
+           447414272  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               28186  page reclaims
+                  95  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+              150371  involuntary context switches
+        445722168002  instructions retired
+        113632838358  cycles elapsed
+           412273720  peak memory footprint
+
+## Average (5 runs)
+
+| Metric | Average |
+|---|---|
+| Processing time (in app, Elapsed) | 4.37 s |
+| Real time | 4.50 s |
+| User CPU time | 36.94 s |
+| System CPU time | 1.49 s |
+| Maximum resident set size | 479,369,626 bytes (~457 MiB) |
+| Peak memory footprint | 435,257,166 bytes (~415 MiB) |
+
+Result per run: 26,843,544 valid rows, 0 skipped rows, 50 campaigns.
